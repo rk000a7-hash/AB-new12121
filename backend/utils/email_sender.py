@@ -1,7 +1,11 @@
 import smtplib
 from email.message import EmailMessage
 from backend.config import Config
-def send_otp_email(recipient_email, otp):
+def send_email(to_email, subject, message):
+    print("Email sending simulated")
+    print("To:", to_email)
+    print("Subject:", subject)
+    print("Message:", message)
     sender_email = Config.GMAIL_SENDER
     sender_password = Config.GMAIL_PASSWORD
     
