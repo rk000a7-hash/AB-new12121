@@ -4,8 +4,7 @@ from backend.utils.email_sender import send_email
 import random
 import datetime
 import jwt
-from config import Config
-
+from backend.config import Config
 auth_bp = Blueprint('auth', __name__)
 
 @auth_bp.route('/request-otp', methods=['POST'])
