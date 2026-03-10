@@ -1,7 +1,6 @@
 import smtplib
 from email.message import EmailMessage
-from config import Config
-
+from backend.config import Config
 def send_otp_email(recipient_email, otp):
     sender_email = Config.GMAIL_SENDER
     sender_password = Config.GMAIL_PASSWORD
