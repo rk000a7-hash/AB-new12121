@@ -1,12 +1,11 @@
 from flask import Flask
 from flask_cors import CORS
-from config import Config
+from backend.config import Config
 
 # Import route blueprints
-from routes.auth_routes import auth_bp
-from routes.product_routes import product_bp
-from routes.cart_routes import cart_bp
-
+from backend.routes.auth_routes import auth_bp
+from backend.routes.product_routes import product_bp
+from backend.routes.cart_routes import cart_bp
 # Create Flask app
 app = Flask(__name__)
 
