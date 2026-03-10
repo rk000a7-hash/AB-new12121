@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
-from utils.db import db
-from utils.email_sender import send_otp_email
+from backend.utils.db import db
+from backend.utils.email_sender import send_email
 import random
 import datetime
 import jwt
