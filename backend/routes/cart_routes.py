@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
 from backend.utils.db import db
-from utils.decorators import token_required
+from backend.utils.decorators import token_required
 from bson.objectid import ObjectId
 
 cart_bp = Blueprint('cart', __name__)
