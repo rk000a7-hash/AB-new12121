@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from utils.db import db
+from backend.utils.db import db
 from utils.decorators import token_required
 from bson.objectid import ObjectId
 
