@@ -1,7 +1,7 @@
-import os
 from dotenv import load_dotenv
+import os
 
-load_dotenv()
+load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
 
 class Config:
     MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017/ecommerce_db")
